@@ -1,3 +1,7 @@
+# mi4p 0.9
+
+* added prettydoc as a suggested package for vignette checks
+
 # mi4p 0.8
 
 * Additional fixes to code and help files.

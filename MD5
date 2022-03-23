@@ -1,6 +1,6 @@
-b72fc33742719e09990247fe5ec251d5 *DESCRIPTION
+71277fb59aadd3a6e1ea469a55b702ef *DESCRIPTION
 ea9dfe0225a0d20bfa971d5bb4430eb9 *NAMESPACE
-bd4149e41faa8b8eadb40a0a620c3115 *NEWS.md
+f464976e8e6caf14ca0abd571558dbc4 *NEWS.md
 aa04f3e154ca77f460dda2a3e38b9621 *R/MVgen.R
 46e9f9940adc5b18dd587e0b249f9c65 *R/check.conditions.R
 1bdce1d67a45498304121544c23863a1 *R/check.design.R
@@ -37,7 +37,7 @@ db2870a09b6f39792b5f7298dea4510d *build/vignette.rds
 28644899837eb6c5fd9c40f9c25e6ef5 *inst/COPYRIGHTS
 7a48d67637c7ae584eeeff87532d9054 *inst/doc/Intromi4p.R
 daed9e302a9fac5bf2d6fd44f58e820f *inst/doc/Intromi4p.Rmd
-8e227ba71fefb136ae469fffeb652d11 *inst/doc/Intromi4p.html
+7ee812ef892ac192c31a3db0747746ae *inst/doc/Intromi4p.html
 5528aaafacd981320b380d61c8427e6c *man/MVgen.Rd
 4f736090764a318d69017db30876b842 *man/check.conditions.Rd
 2ea19f97c160c47c413ed5b95657f5ee *man/check.design.Rd

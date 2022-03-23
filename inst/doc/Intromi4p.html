@@ -618,13 +618,13 @@ a.sourceLine {
 <div id="estimation" class="section level2">
 <h2>ESTIMATION</h2>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="fu">Sys.time</span>(), <span class="st">&quot;Dataset&quot;</span>, <span class="dv">1</span>, <span class="st">&quot;out of&quot;</span>, <span class="dv">1</span>))</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;2022-03-15 01:20:56 Dataset 1 out of 1&quot;</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;2022-03-15 03:38:32 Dataset 1 out of 1&quot;</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>MV1pct.impMLE.VarRubin.Mat <span class="ot">&lt;-</span> <span class="fu">rubin2.all</span>(<span class="at">data =</span> MV1pct.impMLE, <span class="at">metacond =</span> <span class="fu">attr</span>(datasim, <span class="st">&quot;metadata&quot;</span>)<span class="sc">$</span>Condition) </span></code></pre></div>
 </div>
 <div id="projection" class="section level2">
 <h2>PROJECTION</h2>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">&quot;Dataset&quot;</span>, <span class="dv">1</span>, <span class="st">&quot;out of&quot;</span>,<span class="dv">1</span>, <span class="fu">Sys.time</span>()))</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;Dataset 1 out of 1 2022-03-15 01:21:25&quot;</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;Dataset 1 out of 1 2022-03-15 03:39:00&quot;</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>MV1pct.impMLE.VarRubin.S2 <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">lapply</span>(MV1pct.impMLE.VarRubin.Mat, <span class="cf">function</span>(aaa){</span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    DesMat <span class="ot">=</span> mi4p<span class="sc">::</span><span class="fu">make.design</span>(<span class="fu">attr</span>(datasim, <span class="st">&quot;metadata&quot;</span>))</span>
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(<span class="fu">max</span>(<span class="fu">diag</span>(aaa)<span class="sc">%*%</span><span class="fu">t</span>(DesMat)<span class="sc">%*%</span>DesMat))</span>
