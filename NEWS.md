@@ -1,3 +1,8 @@
+# mi4p 1.0
+
+* updated documentation
+* added g.test from ProteoMM in the readme to test for absence/presence
+
 # mi4p 0.9
 
 * added prettydoc as a suggested package for vignette checks
